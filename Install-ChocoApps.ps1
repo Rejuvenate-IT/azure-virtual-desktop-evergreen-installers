@@ -20,6 +20,6 @@ choco install notepadplusplus
 choco install notepadreplacer --params "'/NOTEPAD:C:\Program Files\Notepad++\notepad++.exe'"
 choco install cutepdf
 choco install sumatrapdf.install
-choco install greenshot
+#choco install greenshot # Greenshot runs at startup and is not needed
 choco install powerbi
 # choco install keeper
