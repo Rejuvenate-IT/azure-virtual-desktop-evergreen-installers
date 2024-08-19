@@ -49,7 +49,7 @@ if (-not (Test-Path $folderPath)) {
 }
 
 # Download Harvest App
-Download-AppxPackage "https://apps.microsoft.com/detail/9pblbm45rjqj" "c:\Temp\HarvestApp"
+Download-AppxPackage -Uri "https://apps.microsoft.com/detail/9pblbm45rjqj" -Path "c:\Temp\HarvestApp"
 
 # Get all .appx files in the specified directory
 $appxFiles = Get-ChildItem -Path $folderPath -Filter "*.appx"
