@@ -62,5 +62,4 @@ foreach ($appxFile in $appxFiles) {
 }
 
 # Provision the Appx package
-DISM.EXE /Online /Add-ProvisionedAppxPackage /PackagePath:$appxFile /SkipLicense
-
+DISM.EXE /Online /Add-ProvisionedAppxPackage /PackagePath:c:\Temp\HarvestApp\$appxFile /SkipLicense
