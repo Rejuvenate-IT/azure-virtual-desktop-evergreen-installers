@@ -12,14 +12,14 @@ if (-Not (Get-Command "choco" -errorAction SilentlyContinue)) {
 }
 
 choco feature enable -n=allowGlobalConfirmation
-choco install 7zip
-choco install vlc
-choco install paint.net
+choco install 7zip --yes --no-progress --failonstderr
+choco install vlc --yes --no-progress --failonstderr
+choco install paint.net --yes --no-progress --failonstderr
 #choco install inkscape
 #choco install notepadplusplus
 #choco install notepadreplacer --params "'/NOTEPAD:C:\Program Files\Notepad++\notepad++.exe'"
-choco install cutepdf
-choco install sumatrapdf.install
+choco install cutepdf --yes --no-progress --failonstderr
+choco install sumatrapdf.install --yes --no-progress --failonstderr
 #choco install greenshot # Greenshot runs at startup and is not needed
-choco install powerbi
+choco install powerbi --yes --no-progress --failonstderr
 # choco install keeper
