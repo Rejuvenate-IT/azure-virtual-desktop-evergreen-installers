@@ -52,14 +52,14 @@ if (-not (Test-Path $folderPath)) {
 Download-AppxPackage -Uri "https://apps.microsoft.com/detail/9nrx63209r7b" -Path "c:\Temp\OutlookApp"
 
 # Get all .appx files in the specified directory
-$appxFiles = Get-ChildItem -Path $folderPath -Filter "*.appx"
+$msixFiles = Get-ChildItem -Path $folderPath -Filter "*.Msix"
 
 # Loop through each .appx file and run the desired command
-foreach ($appxFile in $appxFiles) {
+foreach ($msixFile in $msixFiles) {
     # Run the desired command for each file
     # Replace "x" with the desired command
-    write-host $appxFile
+    write-host $msixFile
 }
 
 # Provision the Appx package
-DISM.EXE /Online /Add-ProvisionedAppxPackage /PackagePath:c:\Temp\OutlookApp\$appxFile /SkipLicense
+DISM.EXE /Online /Add-ProvisionedAppxPackage /PackagePath:c:\Temp\OutlookApp\$msixFile /SkipLicense
