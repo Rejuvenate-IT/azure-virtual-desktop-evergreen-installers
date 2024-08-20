@@ -15,9 +15,9 @@ choco feature enable -n=allowGlobalConfirmation
 choco install 7zip
 choco install vlc
 choco install paint.net
-choco install inkscape
-choco install notepadplusplus
-choco install notepadreplacer --params "'/NOTEPAD:C:\Program Files\Notepad++\notepad++.exe'"
+#choco install inkscape
+#choco install notepadplusplus
+#choco install notepadreplacer --params "'/NOTEPAD:C:\Program Files\Notepad++\notepad++.exe'"
 choco install cutepdf
 choco install sumatrapdf.install
 #choco install greenshot # Greenshot runs at startup and is not needed
