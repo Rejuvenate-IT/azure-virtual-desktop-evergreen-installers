@@ -58,8 +58,8 @@ $msixFiles = Get-ChildItem -Path $folderPath -Filter "*.Msix"
 foreach ($msixFile in $msixFiles) {
     # Run the desired command for each file
     # Replace "x" with the desired command
-    write-host $msixFile
+    $msxifilepath = $msixFile.FullName
 }
 
 # Provision the Appx package
-DISM.EXE /Online /Add-ProvisionedAppxPackage /PackagePath:c:\Temp\OutlookApp\$msixFile /SkipLicense
+DISM.EXE /Online /Add-ProvisionedAppxPackage /PackagePath:$msxifilepath /SkipLicense
