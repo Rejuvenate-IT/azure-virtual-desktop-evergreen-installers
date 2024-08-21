@@ -58,8 +58,11 @@ $appxFiles = Get-ChildItem -Path $folderPath -Filter "*.appx"
 foreach ($appxFile in $appxFiles) {
     # Run the desired command for each file
     # Replace "x" with the desired command
-    $msxifilepath = $msixFile.FullName
+    $appxFilePath = $appxFile.FullName
+
+    # Provision the Appx package
+    write-host $appxFilePath
+    DISM.EXE /Online /Add-ProvisionedAppxPackage /PackagePath:$appxFilePath /SkipLicense /Region:"all"
 }
 
-# Provision the Appx package
-DISM.EXE /Online /Add-ProvisionedAppxPackage /PackagePath:$msxifilepath /SkipLicense /Region:"all"
+
