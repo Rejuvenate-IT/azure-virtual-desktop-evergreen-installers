@@ -64,5 +64,3 @@ foreach ($appxFile in $appxFiles) {
     write-host $appxFilePath
     DISM.EXE /Online /Add-ProvisionedAppxPackage /PackagePath:$appxFilePath /SkipLicense /Region:"all"
 }
-
-
