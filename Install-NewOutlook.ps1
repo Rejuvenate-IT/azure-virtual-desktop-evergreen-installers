@@ -61,6 +61,3 @@ foreach ($msixFile in $msixFiles) {
     # Provision the Appx package
     DISM.EXE /Online /Add-ProvisionedAppxPackage /PackagePath:$msxifilepath /SkipLicense /Region:"all"
 }
-}
-
-
