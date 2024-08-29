@@ -26,7 +26,7 @@ try {
 
 
 # Import the AppLocker Module
-Import-Module -Name AppLocker -SkipEditionCheck
+Import-Module -Name AppLocker
 
 # Set the Policy
 Set-AppLockerPolicy -XmlPolicy "c:\applocker_policy.xml"
