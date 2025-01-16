@@ -18,7 +18,7 @@ choco install paint.net --yes --no-progress --failonstderr
 #choco install inkscape
 #choco install notepadplusplus
 #choco install notepadreplacer --params "'/NOTEPAD:C:\Program Files\Notepad++\notepad++.exe'"
-choco install cutepdf --yes --no-progress --failonstderr
+#choco install cutepdf --yes --no-progress --failonstderr
 choco install sumatrapdf.install --yes --no-progress --failonstderr
 #choco install greenshot # Greenshot runs at startup and is not needed
 #choco install powerbi --yes --no-progress --failonstderr
