@@ -41,6 +41,7 @@ if ($Null -eq $Installed)
 elseif ([System.Version]$Published.Version -gt [System.Version]$Installed.Version)
 {
     Update-Module -Name "Evergreen"
+    Update-Evergreen
 }
 
 # App Install
