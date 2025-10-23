@@ -48,7 +48,7 @@ if (-not (Test-Path $folderPath)) {
     New-Item -ItemType Directory -Path $folderPath | Out-Null
 }
 
-# Download Harvest App
+# Download Outlook App
 Download-AppxPackage -Uri "https://apps.microsoft.com/detail/9nrx63209r7b" -Path "c:\Temp\OutlookApp"
 
 # Get all .appx files in the specified directory
